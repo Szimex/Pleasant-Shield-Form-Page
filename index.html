@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+        <head>
+            <meta charset="UTF-8">
+            <title>Input Form - Pleasant Shield</title>
+            <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+            <link type="text/css" rel="stylesheet" href="./style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <header id="navbar" class="navbar">
+                <div class="navbar_container">
+                    <img id="ps_logo" src="PleasantShield-Logo.png" alt="Pleasant Shield logo">
+                    <nav>
+                        <ul>
+                            <li><a href="#" type="_blank">home</a></li>
+                            <li><a href="#" type="_blank">about</a></li>
+                            <li><a href="#" type="_blank">performance</a></li>
+                            <li><a href="#" type="_blank">careers</a></li>
+                            <li><a href="#" type="_blank">dealerships</a></li>
+                            <li><a href="#" type="_blank">contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+
+                <!-- content to be injected starts here -->
+
+            <div class="container">
+                <div id="progress_bar_div" class="progress_bar_div">
+                    <label id="progress_bar_label" for="progress_bar">Step 1 of 8</label>
+                    <progress id="progress_bar" max="8" value="1"></progress>
+                </div>
+                <div>
+                    <div id="client_information">
+                        <h1>Client information</h1>
+                        <p class="header_line"></p>
+                        <form>
+                            <div class="page_row">
+                                <div class="page_col">
+                                    <div>
+                                        <h2 class="display-8">Client</h2>
+                                    </div>
+                                    <div class="page_col">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="client1" name="client" value="existing" class="custom-control-input">
+                                            <label class="custom-control-label" for="client1">Existing</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="client2" name="client" value="new" class="custom-control-input">
+                                            <label class="custom-control-label" for="client2">New</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page_col">
+                                    <div id="choose_client" class="invisible">
+                                        <div>
+                                            <h3 class="display-10">Yours Last Clients</h3>
+                                        </div>
+                                        <select name="manufacturer" class="size_select" size="3">
+                                            <option value="example1" class="size_option">example1</option>
+                                            <option value="example2" class="size_option">example2</option>
+                                            <option value="example3" class="size_option">example3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="display-5 mt-4">General Bulding Information</h2>
+                            </div>
+                            <div class="page_row">
+                                <div class="page_col">
+                                    <div id="building_name_div" class="form_cell">
+                                        <label class="labels" for="building_name">Building Name:</label>
+                                        <input name="building_name" id="building_name" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="building_contact_name_div" class="form_cell">
+                                        <label class="labels" for="building_contact_name">Building Contact Name:</label>
+                                        <input name="building_contact_name" id="building_contact_name" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="building_contact_phone_div" class="form_cell">
+                                        <label class="labels" for="building_contact_phone">Building Contact: Phone:</label>
+                                        <input name="building_contact_phone" id="building_contact_phone" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                </div>
+                                <div class="page_col">
+                                    <div id="building_address_div" class="form_cell">
+                                        <label class="labels" for="building_address">Building Address:</label>
+                                        <input name="building_address" id="building_address" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="building_location_div" class="form_cell">
+                                        <label class="labels" for="building_location">Building Location: City, Province, Postal Code:</label>
+                                        <input name ="building_location" id="building_location" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="building_contact_email_div" class="form_cell">
+                                        <label class="labels" for="building_contact_email">Building Contact: E-mail:</label>
+                                        <input name="building_contact_email" id="building_contact_email" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page_row">
+                                <div class="page_col">
+                                    <div class="form_cell">
+                                        <label class="labels" for="person_completing_form">Name of Person Completing Form:</label>
+                                        <input name="person_completing_form" id="person_completing_form" class="inputs" type="text">
+                                    </div>
+                                </div>
+                                <div class="page_col"></div>
+                            </div>
+                            <div class="page_row">
+                                <div class="page_col">
+                                    <div class="form_cell">
+                                        <label for="phone_person_completing_form">Phone:</label>
+                                        <input name="phone_person_completing_form" id="phone_person_completing_form" class="inputs" type="text">
+                                    </div>
+                                </div>
+                                <div class="page_col">
+                                    <div class="form_cell">
+                                        <label class="labels" for="email_person_completing_form">Email:</label>
+                                        <input name="email_person_completing_form" id="email_person_completing_form" class="inputs" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="product_type">
+                        <form>
+                            <div class="page">
+                                <div>
+                                    <h1>Product Type</h1>
+                                    <p class="header_line"></p>
+                                </div>
+                                <div class="page_row">
+                                    <div class="page_col">
+                                        <div class="form_cell">
+                                            <label>Manufacturer:</label>
+                                            <select name="manufacturer" class="select_input">
+                                                <option value="estman" selected="selected">Eastman</option>
+                                                <option value="3m">3M</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="page_col">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="bulding_information">
+                        <form>
+                            <div class="page">
+                                <div>
+                                    <h1>Building Information</h1>
+                                    <p class="header_line"></p>
+                                </div>
+                                <div>
+                                    <h2>General Bulding Information</h2>
+                                </div>
+                                <div class="form_container">
+                                    <div id="type_of_building" class="form_cell">
+                                        <label class="labels">Type of Building</label>
+                                        <select name="type_of_building" class="select_input">
+                                            <option value="large_office">Large Office / more than 50,000 square feet</option>
+                                            <option value="small_office">Small Office / 5,000 - 50,000 square feet</option>
+                                            <option value="college">College</option>
+                                            <option value="hight_school">High School</option>
+                                            <option value="primary_school">Primary School</option>
+                                            <option value="hospital">Hospital</option>
+                                            <option value="nursing_home">Nursing Home</option>
+                                            <option value="hotel">Hotel / Large Lodging</option>
+                                            <option value="motel">Motel / Small Lodging</option>
+                                            <option value="large_retail">Large Retail / more than 50,000 square feet</option>
+                                            <option value="small_retail">Small Retail / 1,000 - 50,000 square feet</option>
+                                            <option value="restaurant">Restaurant / Sit-Down</option>
+                                            <option value="fastfood">Restaurant / Fast Food</option>
+                                            <option value="grocery">Grocery Store</option>
+                                            <option value="condominium">Condominium Building</option>
+                                        </select>
+                                    </div>
+                                    <div id="building_age_div" class="form_cell">
+                                        <label class="labels" for="building_age">Approximate Year Building was Built</label>
+                                        <input name="buildin_age" id="buildin_age" class="inputs" type="text">
+                                    </div>
+                                    <div id="number_of_floors_div" class="form_cell">
+                                        <label class="labels" for="number_of_floors">Number of Stories/Floors</label>
+                                        <input name="number_of_floors" id="number_of_floors" class="inputs" type="text">
+                                    </div>
+                                    <div id="building_floor_space_div" class="form_cell">
+                                        <label class="labels" for="building_floor_space">Total Building Floor Space (square feet)</label>
+                                        <input name="buildin_floor_space" id="buildin_floor_space" class="inputs" type="text">
+                                    </div>
+                                    <div id="air_distribution_system_div" class="form_cell form_group">
+                                        <label for="air_distribution_system" class="labels">Air Distribution System</label>
+                                        <select id="air_distribution_system" name="air_distribution_system" class="select_input">
+                                            <option value="variable_air_volume">Variable Air Volume</option>
+                                            <option value="constant_air_volume">Constant Air Volume</option>
+                                            <option value="4pipe_fan_coil">Four Pipe System with Fan Coils</option>
+                                            <option value="induction">Powered Induction Units</option>
+                                        </select>
+                                        <label class="inline_labels">Is an Air-Side Economizer Used?</label>
+                                        <select name="airside_economizer" class="select_input">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>                                
+                                        </select>
+                                    </div>
+                                    <div id="heating_system_div" class="form_cell form_group">
+                                        <label for="heating_system" class="labels">Heating System</label>
+                                        <select id="heating_system" name="heating_system" selected="none" class="select_input">
+                                            <option value="none">None</option>
+                                            <option value="gas_boilers">Gas Boilers</option>
+                                            <option value="electric_boilers">Electric Boilers</option>
+                                            <option value="electric_strip_heat">Electric Strip Heat</option>
+                                            <option value="gas_furnace">Gas Furnace</option>
+                                            <option value="room_heat_pump">Roo Heat Pump</option>
+                                            <option value="cetral_heat_pump">Central Heat Pump</option>
+                                            <option value="gas_heat_pump">Gas Heat Pump</option>
+                                            <option value="other">Other</option>
+                                            <input id="heating_system_input" class="inputs" placeholder="other" hidden type="text">
+                                        </select>
+                                    </div>
+                                    <div id="hot_water_temp_reset_div" class="form_cell">
+                                        <label for="hot_water_temp_reset" name="hot_water_temp_reset" class="labels">Is Hot Water Temperature Reset Used?</label>
+                                        <select id="hot_water_temp_reset" class="select_input">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div id="cooling_system_div" class="form_cell">
+                                        <label for="cooling_system" class="labels">Cooling System</label>
+                                        <select id="cooling_system" name="cooling_system" class="select_input">
+                                            <option value="none">None</option>
+                                            <option value="centrifugal_chiller">Centrifugal Chiller</option>
+                                            <option value="reciprocating">Reciprocating or Screw Chiller</option>
+                                            <option value="variable">Variable Speed Drive Chiller</option>
+                                            <option value="gas_absorbsion">Gas Absorbsion Chiller</option>
+                                            <option value="direct_expansion">Direct Expansion (DX) Units</option>
+                                        </select>
+                                    </div>
+                                    <div id="HVAC_description_div" class="form_cell">
+                                        <label for="HVAC_description" class="labels">Additional Description of HVAC System:</label>
+                                        <input name="HVAC_description" id="HVAC_description" class="inputs" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="energy_consumption">
+                        <div>
+                            <h1>Building Energy Consumption</h1>
+                            <p class="header_line"></p>
+                        </div>
+                        <form>
+                            <div>
+                                <h2>Utility Rates and Annual Energy Costs</h2>
+                            </div>
+                            <div class="page_row">
+                                <div class="page_col">
+                                    <div id="kilowatt_amount_div" class="form_cell">
+                                        <label class="labels" for="kilowatt_amount">Annual kilowatt dollar amount:</label>
+                                        <input name="annual_kilowatt_dollar_amount" id="kilowatt_amount" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="annual_kwhr_div" class="form_cell">
+                                        <label class="labels" for="annual_kwhr">Annual KWHR:</label>
+                                        <input name="annual_kwhr" id="annual_kwhr" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="cost_per_kwhr_div" class="form_cell">
+                                        <label class="labels" for="cost_per_kwhr">Cost Per KWHR:</label>
+                                        <p class="inputs" id="cost_per_kwhr"></p>
+                                    </div>
+                                    <div id="gas_consumption_div" class="form_cell">
+                                        <label class="labels" for="gas_consumption">Annual Natural Gas consumption amount:</label>
+                                        <input name="annual_natural_gas_consumption" id="gas_consumption" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="cubic_meter_gas_div" class="form_cell">
+                                        <label class="labels" for="cubic_meter_gas">Annual Cubic Meter Gas consumption:</label>
+                                        <input name="annual_cubic_meter_gas_consumption" id="cubic_meter_gas" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="cost_per_therm_div" class="form_cell">
+                                        <label class="labels" for="cost_per_therm">Cost Per Therm:</label>
+                                        <p class="inputs" id="cost_per_therm"></p>
+                                    </div>
+                                </div>
+                                <div class="page_col">
+                                    <div id="electricity_suplier_div" class="form_cell">
+                                        <label class="labels" for="electricity_suplier">Name of Electricity Supplier:</label>
+                                        <input name="name_of_electricity_suplier" id="electricity_suplier" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                    <div id="gas_suplier_div" class="form_cell">
+                                        <label class="labels" for="gas_suplier">Name of Natural Gas Supplier:</label>
+                                        <input name="name_of_natural_gas_suplier" id="gas_suplier" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="building_orientation">
+                        <h1>Building Orientation & Window Information</h1>
+                        <p class="header_line"></p>
+                        <form>
+                            <div class="page_row">
+                                <div class="page_col">
+                                    <div id="building_sides_div" class="form_col_cell">
+                                        <label for="building_sides" class="labels">How many sides on the building</label>
+                                        <select id="building_sides" name="how_many_sides_on_the_building" class="select_input">
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                        </select>
+                                    </div>
+                                    <div id="side1">
+                                        <div>
+                                            <h2 class="top_label">side 1</h2>
+                                        </div>
+                                        <div id="orientation_side1_div">
+                                            <label for="orientation_side1" class="labels">Orientation side 1</label>
+                                            <select id="orientation_side1" name="orientation_side_1" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side1_div" class="form_col_cell">
+                                            <label for="shaded_windows_side1" class="labels">Are Windows Shaded by Adjacent building side 1</label>
+                                            <select id="shaded_windows_side1" name="are_windows_shaded_by_adjacent_building_side_1" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side1_div" class="form_col_cell">
+                                            <label for="windows_area_side1" class="labels">Windows Area Square Feet Side 1</label>
+                                            <input id="windows_area_side1" name="are_windows_shaded_by_adjacent_building_side_1" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side1_div" class="form_col_cell">
+                                            <label for="film_to_applied_side1" class="labels">Film is to be applied to side 1</label>
+                                            <select id="film_to_applied_side1" name="film_is_to_be_applied_side_1" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side1_div">
+                                            <label for="window_set_back_side1" class="labels">Window Set Back side 1</label>
+                                            <select id="window_set_back_side1" name="window_set_back_side_1" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side1_overhang" name="window_set_back_overhang_side_1" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side1_recessed" name="window_set_back_recessed_side_1" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side1_div">
+                                            <label for="blinds_side1" class="labels">Interior Window Blinds or Shades side 1</label>
+                                            <select id="blinds_side1" name="interior_window_blinds_or_shades_side_1" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side1_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side1" class="labels">Glass Thickness side 1</label>
+                                                <select id="glass_thickness_side1" name="glass_thickness_side_1" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side1" class="labels">Glass Layers side 1</label>
+                                                <select id="glass_layers_side1" name="glass_layers_side_1" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side1" class="labels">Glass Colour side 1</label>
+                                                <select id="glass_colour_side1" name="glass_colour_side_1" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side1" class="labels">Is Glass Reflective side 1</label>
+                                                <select id="glass_reflective_side1" name="glass_reflective_side1" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side1" class="labels">Is Glass Low-e side 1</label>
+                                                <select id="glass_lowe_side1" name="glass_lowe_side1" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="side2">
+                                        <div class="interline"></div>
+                                        <div>
+                                            <h2 class="top_label">side 2</h2>
+                                        </div>
+                                        <div id="orientation_side2_div">
+                                            <label for="orientation_side2" class="labels">Orientation side 2</label>
+                                            <select id="orientation_side2" name="orientation_side_2" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side2_div" class="form_col_cell">
+                                            <label for="shaded_windows_side2" class="labels">Are Windows Shaded by Adjacent building side 2</label>
+                                            <select id="shaded_windows_side2" name="are_windows_shaded_by_adjacent_building_side_2" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side2_div" class="form_col_cell">
+                                            <label for="windows_area_side2" class="labels">Windows Area Square Feet Side 2</label>
+                                            <input id="windows_area_side2" name="are_windows_shaded_by_adjacent_building_side_2" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side2_div" class="form_col_cell">
+                                            <label for="film_to_applied_side2" class="labels">Film is to be applied to side 2</label>
+                                            <select id="film_to_applied_side2" name="film_is_to_be_applied_side_2" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side2_div">
+                                            <label for="window_set_back_side2" class="labels">Window Set Back side 2</label>
+                                            <select id="window_set_back_side2" name="window_set_back_side_2" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side2_overhang" name="window_set_back_overhang_side_2" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side2_recessed" name="window_set_back_recessed_side_2" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side2_div">
+                                            <label for="blinds_side2" class="labels">Interior Window Blinds or Shades side 2</label>
+                                            <select id="blinds_side2" name="interior_window_blinds_or_shades_side_2" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side2_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side2" class="labels">Glass Thickness side 2</label>
+                                                <select id="glass_thickness_side2" name="glass_thickness_side_2" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side2" class="labels">Glass Layers side 2</label>
+                                                <select id="glass_layers_side2" name="glass_layers_side_2" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side2" class="labels">Glass Colour side 2</label>
+                                                <select id="glass_colour_side2" name="glass_colour_side_2" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side2" class="labels">Is Glass Reflective side 2</label>
+                                                <select id="glass_reflective_side2" name="glass_reflective_side_2" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side2" class="labels">Is Glass Low-e side 2</label>
+                                                <select id="glass_lowe_side2" name="glass_lowe_side2" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="side3">
+                                        <div class="interline"></div>
+                                        <div>
+                                            <h2 class="top_label">side 3</h2>
+                                        </div>
+                                        <div id="orientation_side3_div">
+                                            <label for="orientation_side3" class="labels">Orientation side 3</label>
+                                            <select id="orientation_side3" name="orientation_side_3" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side3_div" class="form_col_cell">
+                                            <label for="shaded_windows_side3" class="labels">Are Windows Shaded by Adjacent building side 3</label>
+                                            <select id="shaded_windows_side3" name="are_windows_shaded_by_adjacent_building_side_3" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side3_div" class="form_col_cell">
+                                            <label for="windows_area_side3" class="labels">Windows Area Square Feet Side 3</label>
+                                            <input id="windows_area_side3" name="are_windows_shaded_by_adjacent_building_side_3" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side3_div" class="form_col_cell">
+                                            <label for="film_to_applied_side3" class="labels">Film is to be applied to side 3</label>
+                                            <select id="film_to_applied_side3" name="film_is_to_be_applied_side_3" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side3_div">
+                                            <label for="window_set_back_side3" class="labels">Window Set Back side 3</label>
+                                            <select id="window_set_back_side3" name="window_set_back_side_3" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side3_overhang" name="window_set_back_overhang_side_3" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side3_recessed" name="window_set_back_recessed_side_3" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side3_div">
+                                            <label for="blinds_side3" class="labels">Interior Window Blinds or Shades side 3</label>
+                                            <select id="blinds_side3" name="interior_window_blinds_or_shades_side_3" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side3_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side3" class="labels">Glass Thickness side 3</label>
+                                                <select id="glass_thickness_side3" name="glass_thickness_side_3" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side3" class="labels">Glass Layers side 3</label>
+                                                <select id="glass_layers_side3" name="glass_layers_side_3" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side3" class="labels">Glass Colour side 3</label>
+                                                <select id="glass_colour_side3" name="glass_colour_side_3" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side3" class="labels">Is Glass Reflective side 3</label>
+                                                <select id="glass_reflective_side3" name="glass_reflective_side3" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side3" class="labels">Is Glass Low-e side 3</label>
+                                                <select id="glass_lowe_side3" name="glass_lowe_side3" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="side4" class="invisible">
+                                        <div class="interline"></div>
+                                        <div>
+                                            <h2 class="top_label">side 4</h2>
+                                        </div>
+                                        <div id="orientation_side4_div">
+                                            <label for="orientation_side4" class="labels">Orientation side 4</label>
+                                            <select id="orientation_side4" name="orientation_side_4" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side4div" class="form_col_cell">
+                                            <label for="shaded_windows_side4" class="labels">Are Windows Shaded by Adjacent building side 4</label>
+                                            <select id="shaded_windows_side4" name="are_windows_shaded_by_adjacent_building_side_4" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side4_div" class="form_col_cell">
+                                            <label for="windows_area_side4" class="labels">Windows Area Square Feet Side 4</label>
+                                            <input id="windows_area_side4" name="are_windows_shaded_by_adjacent_building_side_4" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side4_div" class="form_col_cell">
+                                            <label for="film_to_applied_side4" class="labels">Film is to be applied to side 4</label>
+                                            <select id="film_to_applied_side4" name="film_is_to_be_applied_side_4" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side4_div">
+                                            <label for="window_set_back_side4" class="labels">Window Set Back side 4</label>
+                                            <select id="window_set_back_side4" name="window_set_back_side_4" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side4_overhang" name="window_set_back_overhang_side_4" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side4_recessed" name="window_set_back_recessed_side_4" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side4_div">
+                                            <label for="blinds_side4" class="labels">Interior Window Blinds or Shades side 4</label>
+                                            <select id="blinds_side4" name="interior_window_blinds_or_shades_side_4" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side4_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side4" class="labels">Glass Thickness side 4</label>
+                                                <select id="glass_thickness_side4" name="glass_thickness_side_4" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side4" class="labels">Glass Layers side 4</label>
+                                                <select id="glass_layers_side4" name="glass_layers_side_4" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side4" class="labels">Glass Colour side 4</label>
+                                                <select id="glass_colour_side4" name="glass_colour_side_4" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side4" class="labels">Is Glass Reflective side 4</label>
+                                                <select id="glass_reflective_side4" name="glass_reflective_side4" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side4" class="labels">Is Glass Low-e side 4</label>
+                                                <select id="glass_lowe_side4" name="glass_lowe_side4" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="side5" class="invisible">
+                                        <div class="interline"></div>
+                                        <div>
+                                            <h2 class="top_label">side 5</h2>
+                                        </div>
+                                        <div id="orientation_side5_div">
+                                            <label for="orientation_side5" class="labels">Orientation side 5</label>
+                                            <select id="orientation_side5" name="orientation_side_5" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side5_div" class="form_col_cell">
+                                            <label for="shaded_windows_side5" class="labels">Are Windows Shaded by Adjacent building side 5</label>
+                                            <select id="shaded_windows_side5" name="are_windows_shaded_by_adjacent_building_side_5" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side5_div" class="form_col_cell">
+                                            <label for="windows_area_side5" class="labels">Windows Area Square Feet Side 5</label>
+                                            <input id="windows_area_side5" name="are_windows_shaded_by_adjacent_building_side_5" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side5_div" class="form_col_cell">
+                                            <label for="film_to_applied_side5" class="labels">Film is to be applied to side 5</label>
+                                            <select id="film_to_applied_side5" name="film_is_to_be_applied_side_5" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side5_div">
+                                            <label for="window_set_back_side5" class="labels">Window Set Back side 5</label>
+                                            <select id="window_set_back_side5" name="window_set_back_side_5" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side5_overhang" name="window_set_back_overhang_side_5" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side5_recessed" name="window_set_back_recessed_side_5" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side5_div">
+                                            <label for="blinds_side5" class="labels">Interior Window Blinds or Shades side 5</label>
+                                            <select id="blinds_side5" name="interior_window_blinds_or_shades_side_5" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side5_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side5" class="labels">Glass Thickness side 5</label>
+                                                <select id="glass_thickness_side5" name="glass_thickness_side_5" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side5" class="labels">Glass Layers side 5</label>
+                                                <select id="glass_layers_side5" name="glass_layers_side_5" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side5" class="labels">Glass Colour side 5</label>
+                                                <select id="glass_colour_side5" name="glass_colour_side_5" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side5" class="labels">Is Glass Reflective side 5</label>
+                                                <select id="glass_reflective_side5" name="glass_reflective_side5" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side5" class="labels">Is Glass Low-e side 5</label>
+                                                <select id="glass_lowe_side5" name="glass_lowe_side5" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="side6" class="invisible">
+                                        <div class="interline"></div>
+                                        <div>
+                                            <h2 class="top_label">side 6</h2>
+                                        </div>
+                                        <div id="orientation_side6_div">
+                                            <label for="orientation_side6" class="labels">Orientation side 6</label>
+                                            <select id="orientation_side6" name="orientation_side_6" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side6_div" class="form_col_cell">
+                                            <label for="shaded_windows_side6" class="labels">Are Windows Shaded by Adjacent building side 6</label>
+                                            <select id="shaded_windows_side6" name="are_windows_shaded_by_adjacent_building_side_6" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side6_div" class="form_col_cell">
+                                            <label for="windows_area_side6" class="labels">Windows Area Square Feet Side 6/label>
+                                            <input id="windows_area_side6" name="are_windows_shaded_by_adjacent_building_side_6" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side6_div" class="form_col_cell">
+                                            <label for="film_to_applied_side6" class="labels">Film is to be applied to side 6/label>
+                                            <select id="film_to_applied_side6" name="film_is_to_be_applied_side_6" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side6_div">
+                                            <label for="window_set_back_side6" class="labels">Window Set Back side 6</label>
+                                            <select id="window_set_back_side6" name="window_set_back_side_6" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side6_overhang" name="window_set_back_overhang_side_6" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side6_recessed" name="window_set_back_recessed_side_6" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side6_div">
+                                            <label for="blinds_side6" class="labels">Interior Window Blinds or Shades side 6</label>
+                                            <select id="blinds_side6" name="interior_window_blinds_or_shades_side_6" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side6_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side6" class="labels">Glass Thickness side 6</label>
+                                                <select id="glass_thickness_side6" name="glass_thickness_side_6" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side6" class="labels">Glass Layers side 6</label>
+                                                <select id="glass_layers_side6" name="glass_layers_side_6" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side6" class="labels">Glass Colour side 6</label>
+                                                <select id="glass_colour_side6" name="glass_colour_side_6" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side6" class="labels">Is Glass Reflective side 6</label>
+                                                <select id="glass_reflective_side6" name="glass_reflective_side6" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side6" class="labels">Is Glass Low-e side 6</label>
+                                                <select id="glass_lowe_side6" name="glass_lowe_side6" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="side7" class="invisible">
+                                        <div class="interline"></div>
+                                        <div>
+                                            <h2 class="top_label">side 7</h2>
+                                        </div>
+                                        <div id="orientation_side1_div">
+                                            <label for="orientation_side7" class="labels">Orientation side 7</label>
+                                            <select id="orientation_side7" name="orientation_side_7" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side7_div" class="form_col_cell">
+                                            <label for="shaded_windows_side7" class="labels">Are Windows Shaded by Adjacent building side 7</label>
+                                            <select id="shaded_windows_side7" name="are_windows_shaded_by_adjacent_building_side_7" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side7_div" class="form_col_cell">
+                                            <label for="windows_area_side7" class="labels">Windows Area Square Feet Side 7</label>
+                                            <input id="windows_area_side7" name="are_windows_shaded_by_adjacent_building_side_7" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side7_div" class="form_col_cell">
+                                            <label for="film_to_applied_side7" class="labels">Film is to be applied to side 7</label>
+                                            <select id="film_to_applied_side7" name="film_is_to_be_applied_side_7" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side7_div">
+                                            <label for="window_set_back_side7" class="labels">Window Set Back side 7</label>
+                                            <select id="window_set_back_side7" name="window_set_back_side_7" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side7_overhang" name="window_set_back_overhang_side_7" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side7_recessed" name="window_set_back_recessed_side_7" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side7_div">
+                                            <label for="blinds_side7" class="labels">Interior Window Blinds or Shades side 7</label>
+                                            <select id="blinds_side7" name="interior_window_blinds_or_shades_side_7" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side7_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side7" class="labels">Glass Thickness side 7</label>
+                                                <select id="glass_thickness_side7" name="glass_thickness_side_7" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side7" class="labels">Glass Layers side 7</label>
+                                                <select id="glass_layers_side7" name="glass_layers_side_7" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side7" class="labels">Glass Colour side 7</label>
+                                                <select id="glass_colour_side7" name="glass_colour_side_7" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side7" class="labels">Is Glass Reflective side 7</label>
+                                                <select id="glass_reflective_side7" name="glass_reflective_side7" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side7" class="labels">Is Glass Low-e side 7</label>
+                                                <select id="glass_lowe_side7" name="glass_lowe_side7" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="side8" class="invisible">
+                                        <div class="interline"></div>
+                                        <div>
+                                            <h2 class="top_label">side 8</h2>
+                                        </div>
+                                        <div id="orientation_side8_div">
+                                            <label for="orientation_side8" class="labels">Orientation side 8</label>
+                                            <select id="orientation_side8" name="orientation_side_8" class="select_input">
+                                                <option value="n">N</option>
+                                                <option value="ne">NE</option>
+                                                <option value="e">E</option>
+                                                <option value="se">SE</option>
+                                                <option value="s">S</option>
+                                                <option value="sw">SW</option>
+                                                <option value="w">W</option>
+                                                <option value="nw">NW</option>
+                                            </select>
+                                        </div>
+                                        <div id="shaded_windows_side8_div" class="form_col_cell">
+                                            <label for="shaded_windows_side8" class="labels">Are Windows Shaded by Adjacent building side 8</label>
+                                            <select id="shaded_windows_side8" name="are_windows_shaded_by_adjacent_building_side_8" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="windows_area_side8_div" class="form_col_cell">
+                                            <label for="windows_area_side8" class="labels">Windows Area Square Feet Side 8</label>
+                                            <input id="windows_area_side8" name="are_windows_shaded_by_adjacent_building_side_8" class="inputs" type="text">
+                                        </div>
+                                        <div id="film_to_applied_side8_div" class="form_col_cell">
+                                            <label for="film_to_applied_side8" class="labels">Film is to be applied to side 8</label>
+                                            <select id="film_to_applied_side8" name="film_is_to_be_applied_side_8" class="select_input">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="window_set_back_side8_div">
+                                            <label for="window_set_back_side8" class="labels">Window Set Back side 8</label>
+                                            <select id="window_set_back_side8" name="window_set_back_side_8" class="select_input">
+                                                <option value="none">None</option>
+                                                <option value="overhang">Overhang</option>
+                                                <option value="recessed">Recessed</option>
+                                            </select>
+                                            <input id="window_set_back_side8_overhang" name="window_set_back_overhang_side_8" hidden="hidden" placeholder="overhang" class="inputs" type="text">
+                                            <input id="window_set_back_side8_recessed" name="window_set_back_recessed_side_8" hidden="hidden" placeholder="recessed" class="inputs" type="text">
+                                        </div>
+                                        <div id="blinds_side8_div">
+                                            <label for="blinds_side8" class="labels">Interior Window Blinds or Shades side 8</label>
+                                            <select id="blinds_side8" name="interior_window_blinds_or_shades_side_8" class="select_input">
+                                                <option value="no">No</option>
+                                                <optgroup label="Yes">
+                                                    <option value="light">Light</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="dark">Dark</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div id="window_glass_information_side8_div">
+                                            <h3 class="special_label">Window Glass Information</h3>
+                                            <div>
+                                                <label for="glass_thickness_side8" class="labels">Glass Thickness side 8</label>
+                                                <select id="glass_thickness_side8" name="glass_thickness_side_8" class="select_input">
+                                                    <option value="1/8">1/8"</option>
+                                                    <option value="3/16">3/16"</option>
+                                                    <option value="1/4">1/4"</option>
+                                                    <option value="3/8">3/8"</option>
+                                                    <option value="1/2">1/2"</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_layers_side8" class="labels">Glass Layers side 8</label>
+                                                <select id="glass_layers_side8" name="glass_layers_side_8" class="select_input">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="triple">Triple</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_colour_side8" class="labels">Glass Colour side 8</label>
+                                                <select id="glass_colour_side8" name="glass_colour_side_8" class="select_input">
+                                                    <option value="clear">Clear</option>
+                                                    <option value="grey">Grey"</option>
+                                                    <option value="bronze">Bronze"</option>
+                                                    <option value="green">Green</option>
+                                                    <option value="blue">Blue</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_reflective_side8" class="labels">Is Glass Reflective side 8</label>
+                                                <select id="glass_reflective_side8" name="glass_reflective_side8" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="glass_lowe_side8" class="labels">Is Glass Low-e side 8</label>
+                                                <select id="glass_lowe_side8" name="glass_lowe_side8" class="select_input">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page_col">
+                                    <div id="building_rotation_div" class="form_col_cell">
+                                        <label class="labels" for="building_rotation">Building Rotation from North (Degrees 0 to 359):</label>
+                                        <input name="building_rotation_from_north" id="building_rotation" class="inputs" type="text">
+                                        <p class="required_field">This field is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="film_choice">
+                        <h1>Film Choice</h1>
+                        <p class="header_line"></p>
+                        <form>
+                            <div class="page_row">
+                                <div class="page_col">
+                                    <div id="film_selection_side1">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 1</h2>
+                                        </div>
+                                        <div id="bird_film_side1_selection_div">
+                                            <label for="bird_film_side1_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side1_selection" name="bird_film_side_1_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side1_selection_div">
+                                            <label for="solar_film_side1_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side1_selection" name="solar_film_side_1_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side1_selection_div">
+                                            <label for="security_film_side1_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side1_selection" name="security_film_side_1_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="film_selection_side2">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 2</h2>
+                                        </div>
+                                        <div id="bird_film_side2_selection_div">
+                                            <label for="bird_film_side2_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side2_selection" name="bird_film_side_2_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side2_selection_div">
+                                            <label for="solar_film_side2_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side2_selection" name="solar_film_side_2_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side2_selection_div">
+                                            <label for="security_film_side2_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side2_selection" name="security_film_side_2_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="film_selection_side3">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 3</h2>
+                                        </div>
+                                        <div id="bird_film_side3_selection_div">
+                                            <label for="bird_film_side3_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side3_selection" name="bird_film_side_3_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side3_selection_div">
+                                            <label for="solar_film_side3_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side3_selection" name="solar_film_side_3_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side3_selection_div">
+                                            <label for="security_film_side3_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side3_selection" name="security_film_side_3_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="film_selection_side4" class="invisible">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 4</h2>
+                                        </div>
+                                        <div id="bird_film_side4_selection_div">
+                                            <label for="bird_film_side4_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side4_selection" name="bird_film_side_4_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side4_selection_div">
+                                            <label for="solar_film_side4_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side4_selection" name="solar_film_side_4_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side4_selection_div">
+                                            <label for="security_film_side4_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side4_selection" name="security_film_side_4_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="film_selection_side5" class="invisible">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 5</h2>
+                                        </div>
+                                        <div id="bird_film_side5__selectiondiv">
+                                            <label for="bird_film_side5_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side5_selection" name="bird_film_side_5_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side5_selection_div">
+                                            <label for="solar_film_side5_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side5_selection" name="solar_film_side_5_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side5_selection_div">
+                                            <label for="security_film_side5_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side5_selection" name="security_film_side_5_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="film_selection_side6" class="invisible">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 6</h2>
+                                        </div>
+                                        <div id="bird_film_side6_selection_div">
+                                            <label for="bird_film_side6_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side6_selection" name="bird_film_side_6_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side6_div_selection">
+                                            <label for="solar_film_side6_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side6_selection" name="solar_film_side_6_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side6_selection_div">
+                                            <label for="security_film_side6_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side6_selection" name="security_film_side_6_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="film_selection_side7" class="invisible">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 7</h2>
+                                        </div>
+                                        <div id="bird_film_side7_selection_div">
+                                            <label for="bird_film_side7_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side7_selection" name="bird_film_side_7_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side7_selection_div">
+                                            <label for="solar_film_side7_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side7_selection" name="solar_film_side_7_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side7_selection_div">
+                                            <label for="security_film_side7_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side7_selection" name="security_film_side_7_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="film_selection_side8" class="invisible">
+                                        <div>
+                                            <h2 class="top_label">Film Selection side 8</h2>
+                                        </div>
+                                        <div id="bird_film_side8_selection_div">
+                                            <label for="bird_film_side8_selection" class="labels">Bird Film</label>
+                                            <select id="bird_film_side8_selection" name="bird_film_side_8_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="solar_film_side8_selection_div">
+                                            <label for="solar_film_side8_selection" class="labels">Solar Film</label>
+                                            <select id="solar_film_side8_selection" name="solar_film_side_8_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div id="security_film_side8_selection_div">
+                                            <label for="security_film_side8_selection" class="labels">Security Film</label>
+                                            <select id="security_film_side8_selection" name="security_film_side_8_selection" class="select_input">
+                                                <option value="no">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page_col">
+                                    <div id="film_setup_side1">
+                                        <div id="side1_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 1 Bird Film</h2>
+                                            </div>
+
+                                        </div>
+                                        <div id="side1_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 1 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side1_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 1 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film_setup_side2">
+                                        <div id="side2_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 2 Bird Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side2_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 2 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side2_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 2 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film_setup_side3">
+                                        <div id="side3_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 3 Bird Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side3_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 3 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side3_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 3 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film_setup_side4" class="invisible">
+                                        <div id="side4_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 4 Bird Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side4_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 4 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side4_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 4 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film_setup_side5" class="invisible">
+                                        <div id="side5_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 5 Bird Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side5_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 5 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side5_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 5 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film_setup_side6" class="invisible">
+                                        <div id="side6_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 6 Bird Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side6_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 6 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side6_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 6 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film_setup_side7" class="invisible">
+                                        <div id="side7_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 7 Bird Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side7_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 7 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side7_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 7 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film_setup_side8" class="invisible">
+                                        <div id="side8_bird_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 8 Bird Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side8_solar_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 8 Solar Film</h2>
+                                            </div>
+                                        </div>
+                                        <div id="side8_security_film" class="invisible">
+                                            <div>
+                                                <h2 class="top_label">Side 8 Security Film</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="read_and_confirm">
+                        <form>
+                            <div class="page"></div>
+                        </form>
+                    </div>
+                    <div id="print_pdf">
+    
+                    </div>
+                </div>
+                <div class="toggle_buttons">
+                    <button id="prev_button" class="prev_button">previous</button>
+                    <button id="next_button" class="next_button">next</button>
+                </div>
+            </div>
+
+                <!-- and ends here -->
+                
+            </main>
+            <footer>
+                <div class="footer_top">
+                    <div>
+                        <span>
+                            <img src="./PleasantShield-Logo.png">
+                        </span>
+                        <p>PleasantShield is a North American based solar control and security window film company that produces, distributes and installs products and services for architectural applications in the residential, commercial, institutional, government and manufacturing sectors.</p>
+                    </div>
+                    <div>
+                        <h2>quicklink</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div>
+                        <h2>contact us</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div>
+                        <h2>newsletter</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p>&copy PleasantShield. All rights reserved.</p>
+                </div>
+            </footer>
+            <script type="text/javascript" src="jquery.js"></script>
+            <script type="text/javascript" src="main.js"></script>
+        </body>
+    </html>
